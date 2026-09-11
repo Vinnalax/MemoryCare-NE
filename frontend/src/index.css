@@ -1,0 +1,417 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  color-scheme: light;
+  background: #f1f5f4;
+}
+
+html.dark {
+  color-scheme: dark;
+  background: #111827;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f1f5f4;
+  color: #17212b;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.dark body {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+/* -------------------------------------------------
+   MemoryCare NE visual system
+   ------------------------------------------------- */
+
+.bg-slate-50 {
+  background-color: #f1f5f4;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.border-slate-100,
+.border-slate-200 {
+  border-color: #d7e0dd;
+}
+
+.text-slate-900 {
+  color: #17212b;
+}
+
+.text-slate-800 {
+  color: #25313b;
+}
+
+.text-slate-700 {
+  color: #46525c;
+}
+
+.text-slate-600 {
+  color: #5f6c75;
+}
+
+.text-slate-500 {
+  color: #7a8790;
+}
+
+/* -------------------------------------------------
+   Teal — light mode
+   ------------------------------------------------- */
+
+.bg-teal-50 {
+  background-color: #e6f4f2;
+}
+
+.bg-teal-100 {
+  background-color: #d1ebe8;
+}
+
+.text-teal-800 {
+  color: #115e59;
+}
+
+.text-teal-700 {
+  color: #0f766e;
+}
+
+.text-teal-600 {
+  color: #0d9488;
+}
+
+.border-teal-100 {
+  border-color: #b8ded9;
+}
+
+/* -------------------------------------------------
+   Standard card outline
+   ------------------------------------------------- */
+
+.bg-white.border,
+.bg-white.ring-1,
+.bg-white.shadow-sm {
+  box-shadow:
+    0 0 0 1px #aebbb7,
+    0 2px 5px rgb(15 23 42 / 0.06);
+}
+
+.bg-white.border {
+  border-color: #aebbb7;
+}
+
+.bg-white.ring-1 {
+  --tw-ring-color: #aebbb7;
+}
+
+/* -------------------------------------------------
+   Dark mode
+   ------------------------------------------------- */
+
+.dark .bg-slate-50 {
+  background-color: #111827;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1f2937;
+}
+
+.dark .bg-white {
+  background-color: #1b2533;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200 {
+  border-color: #334155;
+}
+
+.dark .border-slate-300 {
+  border-color: #475569;
+}
+
+.dark .text-slate-900 {
+  color: #f3f4f6;
+}
+
+.dark .text-slate-800 {
+  color: #e5e7eb;
+}
+
+.dark .text-slate-700 {
+  color: #d1d5db;
+}
+
+.dark .text-slate-600 {
+  color: #aeb8c2;
+}
+
+.dark .text-slate-500 {
+  color: #8f9ba7;
+}
+
+/* -------------------------------------------------
+   Teal — dark mode
+   ------------------------------------------------- */
+
+.dark .bg-teal-50 {
+  background-color: #123c3a;
+}
+
+.dark .bg-teal-100 {
+  background-color: #164e4a;
+}
+
+.dark .text-teal-800 {
+  color: #99f6e4;
+}
+
+.dark .text-teal-700,
+.dark .text-teal-600 {
+  color: #5eead4;
+}
+
+.dark .border-teal-100 {
+  border-color: #1f5b57;
+}
+
+/* -------------------------------------------------
+   Dark card outline
+   ------------------------------------------------- */
+
+.dark .bg-white.border,
+.dark .bg-white.ring-1,
+.dark .bg-white.shadow-sm {
+  box-shadow:
+    0 0 0 1px #3b4858,
+    0 2px 6px rgb(0 0 0 / 0.22);
+}
+
+.dark .bg-white.border {
+  border-color: #3b4858;
+}
+
+.dark .bg-white.ring-1 {
+  --tw-ring-color: #3b4858;
+}
+
+/* -------------------------------------------------
+   Amber
+   ------------------------------------------------- */
+
+.bg-amber-50 {
+  background-color: #fff8e8;
+}
+
+.border-amber-100 {
+  border-color: #f1dfad;
+}
+
+.dark .bg-amber-50 {
+  background-color: #422006;
+}
+
+.dark .border-amber-100 {
+  border-color: #713f12;
+}
+
+/* -------------------------------------------------
+   Standard shadows
+   ------------------------------------------------- */
+
+.shadow-sm {
+  box-shadow:
+    0 0 0 1px #aebbb7,
+    0 2px 5px rgb(15 23 42 / 0.06);
+}
+
+.shadow {
+  box-shadow:
+    0 0 0 1px #aebbb7,
+    0 2px 6px rgb(15 23 42 / 0.07);
+}
+
+.dark .shadow-sm {
+  box-shadow:
+    0 0 0 1px #3b4858,
+    0 2px 6px rgb(0 0 0 / 0.22);
+}
+
+.dark .shadow {
+  box-shadow:
+    0 0 0 1px #3b4858,
+    0 2px 8px rgb(0 0 0 / 0.24);
+}
+
+/* -------------------------------------------------
+   Sidebar navigation
+   ------------------------------------------------- */
+
+.mc-sidebar-item {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: #46525c !important;
+}
+
+.mc-sidebar-item:hover {
+  background-color: #f1f5f3 !important;
+  box-shadow:
+    0 0 0 1px #aebbb7,
+    0 2px 4px rgb(15 23 42 / 0.06) !important;
+  color: #17212b !important;
+}
+
+.mc-sidebar-item:active {
+  background-color: #e8efec !important;
+  box-shadow:
+    0 0 0 1px #9eaca7 !important;
+}
+
+.dark .mc-sidebar-item {
+  background-color: transparent !important;
+  color: #d1d5db !important;
+}
+
+.dark .mc-sidebar-item:hover {
+  background-color: #293648 !important;
+  box-shadow:
+    0 0 0 1px #4b596b,
+    0 2px 5px rgb(0 0 0 / 0.18) !important;
+  color: #ffffff !important;
+}
+
+.dark .mc-sidebar-item:active {
+  background-color: #334155 !important;
+  box-shadow:
+    0 0 0 1px #536174 !important;
+}
+
+/* -------------------------------------------------
+   Buttons and controls
+   ------------------------------------------------- */
+
+button,
+a,
+input,
+textarea,
+select {
+  transition:
+    background-color 160ms ease,
+    border-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgb(13 148 136 / 0.25);
+  outline-offset: 2px;
+}
+
+/* -------------------------------------------------
+   Form controls
+   ------------------------------------------------- */
+
+input,
+textarea,
+select {
+  background-color: #ffffff;
+  border-color: #b8c4c0;
+  color: #17212b;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #7a8790;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #0f766e;
+}
+
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #1b2533;
+  color: #f3f4f6;
+  border-color: #3b4858;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #8f9ba7;
+}
+
+.dark input:focus,
+.dark textarea:focus,
+.dark select:focus {
+  border-color: #14b8a6;
+}
+
+/* -------------------------------------------------
+   General dark-mode hover states
+   ------------------------------------------------- */
+
+.dark .hover\:bg-slate-50:hover {
+  background-color: #253142;
+}
+
+.dark .hover\:bg-slate-100:hover {
+  background-color: #293648;
+}
+
+.dark .hover\:bg-slate-800:hover {
+  background-color: #334155;
+}
+
+/* -------------------------------------------------
+   Scrollbars
+   ------------------------------------------------- */
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c4cfcb transparent;
+}
+
+.dark * {
+  scrollbar-color: #475569 transparent;
+}
+
+/* -------------------------------------------------
+   Accessibility
+   ------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
